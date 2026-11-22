@@ -1,0 +1,7 @@
+contract_id,consumer_service,producer_service,endpoint_path,http_method,contract_version,pact_hash,breaking_change_detected,schema_drift_status,pii_masking_applied,verification_status
+CDC-PACT-01,Web_Checkout_SPA,Payments_API_v3,/api/v3/charges,POST,v3.4.1,a591a6d40bf420404a011733cfb7b190,false,ZERO_DRIFT,true,VERIFIED_PASS
+CDC-PACT-02,Mobile_iOS_App,Order_Service,/api/v1/orders/{orderId},GET,v1.8.0,bf5258f3be7d5bb2f01f4ab98064bf63,false,ZERO_DRIFT,true,VERIFIED_PASS
+CDC-PACT-03,Partner_Webhook_Worker,Inventory_Catalog,/api/v2/products/sku/{sku},GET,v2.1.0,7d793037a0760186574b0282f2f435e7,true,FIELD_TYPE_MUTATION,false,BREAKING_CHANGE_BLOCKED
+CDC-PACT-04,Subscription_Billing_Daemon,User_Identity_IAM,/api/v1/users/{userId}/entitlements,GET,v1.2.4,2c6ee3d3fb490a618e99497e2f5b357f,false,ZERO_DRIFT,true,VERIFIED_PASS
+CDC-PACT-05,Analytics_Data_Ingestor,Telemetry_Gateway,/api/v1/events/batch,POST,v2.0.0,f2ca1bb6c7e907d06dafe4687e579fce,true,REMOVED_REQUIRED_FIELD,false,BREAKING_CHANGE_BLOCKED
+CDC-PACT-06,Customer_Support_Portal,Ticketing_Core,/api/v1/tickets/search,POST,v1.5.2,2c26b46b68ffc68ff99b453c1d304134,false,BACKWARD_COMPATIBLE,true,VERIFIED_PASS
